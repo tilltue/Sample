@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Qbz-9A-TxP">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="VyV-xG-hqN">
+            <objects>
+                <navigationController id="Qbz-9A-TxP" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ftj-DV-EDZ">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="8iE-i0-77t" kind="relationship" relationship="rootViewController" id="wTg-po-fAg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fsi-yg-v91" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-519" y="61"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Tkt-0b-xXP">
+            <objects>
+                <viewController id="8iE-i0-77t" customClass="ViewController" customModule="Sample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1Fe-Fm-8Py">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KLL-iC-B6L">
+                                <rect key="frame" x="184" y="460" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="buttonTapWithSender:" destination="8iE-i0-77t" eventType="touchUpInside" id="e0U-GL-KFs"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="KLL-iC-B6L" firstAttribute="centerY" secondItem="Qf0-jM-pNx" secondAttribute="centerY" id="e9I-tj-dHx"/>
+                            <constraint firstItem="KLL-iC-B6L" firstAttribute="centerX" secondItem="Qf0-jM-pNx" secondAttribute="centerX" id="wb6-Z0-v9H"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Qf0-jM-pNx"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="R9z-2C-ckN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3gp-2C-Rth" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="296" y="61"/>
+        </scene>
+    </scenes>
+</document>
